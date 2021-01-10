@@ -46,6 +46,8 @@ awk -v FOO1="${newElem}" '{
 }' blogposts/main.html>tmp
 cat tmp>blogposts/main.html
 rm -rf tmp
+
+mv ${1} junk/
 # git commit new post
-# git add "blogposts/${2}.html" "atom.xml"
-# git commit -m "Added ${title} post"
+git add "blogposts/${2}.html" "atom.xml"
+git commit -m "Added ${title} post"
