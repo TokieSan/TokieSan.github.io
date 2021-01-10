@@ -13,7 +13,7 @@ cat "blogposts/tail" >>  "blogposts/${2}.html"
 
 #atom ress
 
-echo "<?xml version="1.0" encoding="utf-8"?>
+echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href=\"https://tokiesan.github.io/atom.xml\" rel=\"self\"/>
