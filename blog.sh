@@ -13,21 +13,22 @@ cat "blogposts/tail" >>  "blogposts/${2}.html"
 
 #atom ress
 
+read -p "Summary: " summ
 echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns=\"http://www.w3.org/2005/Atom\">
 <title>Tokhy's hub</title>
 <link href=\"https://tokiesan.github.io/atom.xml\" rel=\"self\"/>
 <updated>"${xmlDate}"</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
-<id>tokiesan.github.io</id>
+<id>https://tokiesan.github.io</id>
 ""$(sed -n 10,$(echo ${remNums}-1 | bc)p atom.xml)">atom.xml
 echo "<entry>
-<title>"${title}"</title><content type=\"html\">"${htmlContent}"</content>
+<title>"${title}"</title><summary>"${summ}"</summary>""
 <link href=\"blogposts/${2}.html\"/>
-<id>tag:tokiesan.github.io:blogposts/"${2}".html</id>
-<published>"${xmlDate}"</published>
+<updated>"${xmlDate}"</updated>
+<id>https://tokiesan.github.io/blogposts/${2}.html</id>
 </entry>
 </feed>">>atom.xml
 
