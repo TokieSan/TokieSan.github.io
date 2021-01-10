@@ -1,7 +1,7 @@
 #!/bin/sh
 title=$(cat ${1} | head -1 | cut -c 3-)
 postDate=$(date +"%a, %b. %Y - %r")
-xmlDate=$(date +"%Y-%m-%dT%T+2:00")
+xmlDate=$(date --rfc-3339=seconds | sed 's/ /T/')
 postHead=$(cat blogposts/head)
 postAbstract=$(cat ${1} | grep --line-number \#\# | grep 2 | cut -c 6-)
 htmlContent=$(md2html ${1})
