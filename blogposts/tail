@@ -1,18 +1,15 @@
 
         <div class="butt">
-            <a href="docs/philosophy.html">philosophies</a>
-            <a href="docs/track.html">track</a>
-            <a href="docs/wishlist.html">wishlist</a>
-            <a href="docs/blog/main.html">blog</a>
-            <a href="docs/podcast/main.html">podcasts</a>
-            <a href="docs/music.html">music</a>
-            <a href="docs/shows.html">shows</a>
-            </br></br>    
-             
-            <a href="contact me form" style="color:#24d1ac">wanna <span style="text-decoration: line-through;">bang</span> contact me?</a>
+            <a href="../philosophy.html">philosophies</a>
+            <a href="../blogposts/main.html">blog</a>
+            <a href="../favs/main.html">favs</a>
+            <a href="../track.html">track</a>
+            <a href="../wishlist.html">wishlist</a>
+            </br></br>       
+            <a href="../contact.html" style="color:#24d1ac">wanna <span style="text-decoration: line-through;">bang</span> contact me?</a>
         </div>
     </div>
-    <div class="footer">
+    <div class="header">
 
     </div>
 </body>
