@@ -1,6 +1,6 @@
 #!/bin/sh
 title=$(cat ${1} | head -1 | cut -c 3-)
-postDate=$(date +"%a, %b. %Y - %r")
+postDate=$(date +"%d %a, %b. %Y - %r")
 xmlDate=$(date --rfc-3339=seconds | sed 's/ /T/')
 postHead=$(cat blogposts/head)
 postAbstract=$(cat ${1} | grep --line-number \#\# | grep 2 | cut -c 6-)
@@ -26,7 +26,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 ""$(sed -n 10,$(echo ${remNums}-1 | bc)p atom.xml)">atom.xml
 echo "<entry>
 <title>"${title}"</title><summary>"${summ}"</summary>""
-<link href=\"blogposts/${2}.html\"/>
+<link href=\"https://tokiesan.github.io/blogposts/${2}.html\"/>
 <updated>"${xmlDate}"</updated>
 <id>https://tokiesan.github.io/blogposts/${2}.html</id>
 </entry>
