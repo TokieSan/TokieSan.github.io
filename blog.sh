@@ -1,6 +1,6 @@
 #!/bin/sh
 title=$(cat ${1} | head -1 | cut -c 3-)
-postDate=$(date +"%d %a, %b. %Y - %r")
+postDate=$(date +"%a, %d %b. %Y - %r")
 xmlDate=$(date --rfc-3339=seconds | sed 's/ /T/')
 postHead=$(cat blogposts/head)
 postAbstract=$(cat ${1} | grep --line-number \#\# | grep 2 | cut -c 6-)
@@ -32,5 +32,20 @@ echo "<entry>
 </entry>
 </feed>">>atom.xml
 
+#add to main page
+newElem="
+<tr>
+     <td class=\"title\"><a href=\"${2}.html\">${title}</a></td>
+	 <td><em>$(date +"%a, %d %b. %Y")</em></td>
+</tr>
+"
+
+awk -v FOO1="${newElem}" '{
+    sub(/<!---->/, "<!----> " FOO1);
+    print;
+}' blogposts/main.html>tmp
+cat tmp>blogposts/main.html
+rm -rf tmp
+# git commit new post
 # git add "blogposts/${2}.html" "atom.xml"
 # git commit -m "Added ${title} post"
