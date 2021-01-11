@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2021-01-10T10:11:44+02:00</updated>
+<updated>2021-01-11T06:06:44+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -39,5 +39,11 @@
 <link href="https://tokiesan.github.io/blogposts/MeToMe.html"/>
 <updated>2021-01-10T10:11:44+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/MeToMe.html</id>
+</entry>
+<entry>
+<title>Tokhy's Documentation</title><summary>$man tokhy.</summary>
+<link href="https://tokiesan.github.io/philosophy.html"/>
+<updated>2021-01-11T06:06:44+02:00</updated>
+<id>https://tokiesan.github.io/philosophy.html</id>
 </entry>
 </feed>
