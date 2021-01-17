@@ -11,3 +11,6 @@ awk -v FOO1="${newElem}" '{
 }' track.html>tmp
 cat tmp>track.html
 rm -rf tmp
+
+git add "track.html"
+git commit -m "Added ${title} to the track"

@@ -11,3 +11,7 @@ awk -v FOO1="${newElem}" '{
 }' wishlist.html>tmp
 cat tmp>wishlist.html
 rm -rf tmp
+
+# git commit new post
+git add "wishlist.html"
+git commit -m "Added ${title} to the wishlist"
