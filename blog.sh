@@ -32,7 +32,7 @@ echo "<entry>
 </entry>
 </feed>">>atom.xml
 
-#add to main page
+#add to index page
 newElem="
 <tr>
      <td class=\"title\"><a href=\"${2}.html\">${title}</a></td>
@@ -43,8 +43,8 @@ newElem="
 awk -v FOO1="${newElem}" '{
     sub(/<!---->/, "<!----> " FOO1);
     print;
-}' blogposts/main.html>tmp
-cat tmp>blogposts/main.html
+}' blogposts/index.html>tmp
+cat tmp>blogposts/index.html
 rm -rf tmp
 
 mv ${1} junk/
