@@ -49,5 +49,5 @@ rm -rf tmp
 
 mv ${1} junk/
 # git commit new post
-git add "blogposts/${2}.html" "atom.xml"
+git add "blogposts/${2}.html" "atom.xml" "blogposts/index.html"
 git commit -m "Added ${title} post"
