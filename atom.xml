@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2021-01-18T04:27:02+02:00</updated>
+<updated>2021-01-19T02:33:19+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -52,5 +52,11 @@
 <link href="https://tokiesan.github.io/blogposts/AnnouncingTheBlog.html"/>
 <updated>2021-01-18T04:27:02+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/AnnouncingTheBlog.html</id>
+</entry>
+<entry>
+<title>The "Parler" Disaster</title><summary>My comments on Google, Apple, Amazon dropping parler of their service. TL;DR It fucking sucks.</summary>
+<link href="https://tokiesan.github.io/blogposts/theParlerDisaster.html"/>
+<updated>2021-01-19T02:33:19+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/theParlerDisaster.html</id>
 </entry>
 </feed>
