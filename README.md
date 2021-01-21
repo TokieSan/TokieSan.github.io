@@ -5,6 +5,3 @@ Hello boyz, that is a personal blog that I decided to make. I was too proud to u
 ## Extra
 Since reusability wasn't a goal, it will be hard to fast-clone the thing. However, feel free to use any shit available here for your own sake, it's under GPL-3.
 
-I usually do everything on transfer branch, even the website is hosted through that branch. Why? I don't know.
-
-
