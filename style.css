@@ -1,11 +1,11 @@
 body {
-    font-family: 'DejaVu Sans Mono','Ubuntu Mono', sans-serif;
+    font-family: 'DejaVu Sans Mono', monospace;
     background-color: #0a0a0a;
     filter: invert(1);
     margin:40px auto;
     max-width:750px;
     line-height:1.8;
-    font-size:18px;
+    font-size:14px;
     padding:0 10px;
 }
 img {
