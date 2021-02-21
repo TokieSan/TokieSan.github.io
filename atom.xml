@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2021-02-06T03:45:17+02:00</updated>
+<updated>2021-02-21T06:22:14+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -28,13 +28,6 @@
 <updated>2021-01-10T10:07:27+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/almostHateSpeech.html</id>
 </entry>
-<entry>
-<title>Let’s talk satisfaction </title><summary>Seasonal Affective Disorder Time.</summary>
-<link href="https://tokiesan.github.io/blogposts/LetsTalkSatisfaction.html"/>
-<updated>2021-01-10T10:08:52+02:00</updated>
-<id>https://tokiesan.github.io/blogposts/LetsTalkSatisfaction.html</id>
-</entry>
-
 <entry>
 <title>Me to Me</title><summary>I wanted to write, but FaceToFace said it.</summary>
 <link href="https://tokiesan.github.io/blogposts/MeToMe.html"/>
@@ -70,5 +63,11 @@
 <link href="https://tokiesan.github.io/blogposts/Untitled.html"/>
 <updated>2021-02-06T03:45:17+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/Untitled.html</id>
+</entry>
+<entry>
+<title>LaTeX, full of shit but beautiful</title><summary>I decided to "learn" LaTeX, or just use it to be precise. Here's a boring blogpost to trace.</summary>
+<link href="https://tokiesan.github.io/blogposts/.html"/>
+<updated>2021-02-21T06:22:14+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/.html</id>
 </entry>
 </feed>
