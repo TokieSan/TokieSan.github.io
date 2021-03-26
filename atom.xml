@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2021-02-27T04:32:52+02:00</updated>
+<updated>2021-03-27T00:55:23+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -80,5 +80,11 @@
 <link href="https://tokiesan.github.io/blogposts/Ycarcotirem.html"/>
 <updated>2021-02-27T04:32:52+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/Ycarcotirem.html</id>
+</entry>
+<entry>
+<title>Why I decided not to aim for the A in university</title><summary>After deep research, I found out that caring for the A in college is pretty pathetic.</summary>
+<link href="https://tokiesan.github.io/blogposts/whyNoA.html"/>
+<updated>2021-03-27T00:55:23+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/whyNoA.html</id>
 </entry>
 </feed>
