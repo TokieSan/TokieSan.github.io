@@ -8,7 +8,7 @@ htmlContent=$(md2html ${1})
 remNums=$(cat atom.xml | wc -l)
 echo "<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>"${title}"</title>"${postHead} > "blogposts/${2}.html"
 echo ${htmlContent} >> "blogposts/${2}.html"
-echo "</br><em style='color: #333333;'>Posted at ${postDate}</em></br></br>">>"blogposts/${2}.html"
+echo "<br/><em style='color: #333333;'>Posted at ${postDate}</em><br/><br/>">>"blogposts/${2}.html"
 cat "blogposts/tail" >>  "blogposts/${2}.html"
 
 #atom ress
