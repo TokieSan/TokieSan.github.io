@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2021-05-10T17:48:39+02:00</updated>
+<updated>2021-06-01T02:53:46+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -92,5 +92,11 @@
 <link href="https://tokiesan.github.io/blogposts/isItDone.html"/>
 <updated>2002-06-27T17:48:39+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/isItDone.html</id>
+</entry>
+<entry>
+<title>Migrating To MPD</title><summary>Stopped using Spotify, time for a self-hosted alternative!</summary>
+<link href="https://tokiesan.github.io/blogposts/migratingToMPD.html"/>
+<updated>2021-06-01T02:53:46+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/migratingToMPD.html</id>
 </entry>
 </feed>
