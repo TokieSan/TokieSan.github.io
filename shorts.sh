@@ -32,7 +32,7 @@ echo "<entry>
 </entry>
 </feed>">>atom.xml
 
-rm -rf ${1}
+mv ${1} junk/
 # git commit new post
 git add "shorts.html"
 git commit -m "Added ${title} to the shorts"
