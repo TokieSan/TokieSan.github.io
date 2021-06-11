@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2021-06-02T03:40:23+02:00</updated>
+<updated>2021-06-11T11:30:44+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -104,5 +104,17 @@
 <link href="https://tokiesan.github.io/blogposts/whoAreYou.html"/>
 <updated>2021-06-02T03:40:23+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/whoAreYou.html</id>
+</entry>
+<entry>
+<title>Lemon</title><summary>Lemon is indeed sad.</summary>
+<link href="https://tokiesan.github.io/shorts.html"/>
+<updated>2021-06-11T11:30:09+02:00</updated>
+<id>https://tokiesan.github.io/shorts.html</id>
+</entry>
+<entry>
+<title>Happy Birthday!</title><summary>"Today is my birthday. Or precisely, today is 11/06/21 which is before my birthday by about sixteen days. Sixteen is a perfect square. Perfect Squares are cool. Back to our point, Let's assume I'm writing a letter for my birthday. Hello Tokhy! Hope you die today. Bye!" The above started as a long letter that I decided to write myself another tragic letter. But man, the whole miserable letter thing I intended to do and shit is pretty pathetic. Thus, I decided to write my future self a real birthday card. I hoped him to receive his most wanted present; uncontrollable and sudden death. Heart attacks are my and his favorite. Happy birthday! <br></summary>
+<link href="https://tokiesan.github.io/shorts.html"/>
+<updated>2021-06-11T11:30:44+02:00</updated>
+<id>https://tokiesan.github.io/shorts.html</id>
 </entry>
 </feed>
