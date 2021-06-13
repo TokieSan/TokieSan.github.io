@@ -35,4 +35,5 @@ echo "<entry>
 mv ${1} junk/
 # git commit new post
 git add "shorts.html"
+git add "atom.xml"
 git commit -m "Added ${title} to the shorts"
