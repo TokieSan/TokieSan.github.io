@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2021-06-13T12:32:58+02:00</updated>
+<updated>2021-06-21T00:41:37+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -122,5 +122,11 @@
 <link href="https://tokiesan.github.io/shorts.html"/>
 <updated>2021-06-13T12:32:58+02:00</updated>
 <id>https://tokiesan.github.io/shorts.html</id>
+</entry>
+<entry>
+<title>Redefinition</title><summary>Another unsuccessful attempt to define my depression.</summary>
+<link href="https://tokiesan.github.io/blogposts/Redefenition.html"/>
+<updated>2021-06-21T00:41:37+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/Redefenition.html</id>
 </entry>
 </feed>
