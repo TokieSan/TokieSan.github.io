@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2021-06-28T00:13:07+02:00</updated>
+<updated>2021-11-15T00:09:02+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -134,5 +134,11 @@
 <link href="https://tokiesan.github.io/blogposts/the19thRewind.html"/>
 <updated>2021-06-28T00:13:07+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/the19thRewind.html</id>
+</entry>
+<entry>
+<title>When You're Strange</title><summary>Either I am strange or you are. We can not both be analogous.</summary>
+<link href="https://tokiesan.github.io/blogposts/whenYouAreStrange.html"/>
+<updated>2021-11-15T00:09:02+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/whenYouAreStrange.html</id>
 </entry>
 </feed>
