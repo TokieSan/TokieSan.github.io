@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2022-02-20T20:04:25+02:00</updated>
+<updated>2022-05-06T15:09:44+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -152,5 +152,11 @@
 <link href="https://tokiesan.github.io/blogposts/depressionIsInevitable.html"/>
 <updated>2022-02-20T20:04:25+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/depressionIsInevitable.html</id>
+</entry>
+<entry>
+<title>Are Humans Considered Alive?</title><summary>Are Humans Considered Alive?</summary>
+<link href="https://tokiesan.github.io/blogposts/Does Life Really Exists?.html"/>
+<updated>2022-05-06T15:09:44+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/Does Life Really Exists?.html</id>
 </entry>
 </feed>
