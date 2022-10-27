@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2022-06-27T22:42:04+02:00</updated>
+<updated>2022-10-27T05:01:22+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -158,5 +158,11 @@
 <link href="https://tokiesan.github.io/blogposts/aStoryOfAPack.html"/>
 <updated>2022-06-27T22:42:04+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/aStoryOfAPack.html</id>
+</entry>
+<entry>
+<title>A Message To My Loyal Friend</title><summary>A message to my loyal friend.</summary>
+<link href="https://tokiesan.github.io/blogposts/.html"/>
+<updated>2022-10-27T05:01:22+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/.html</id>
 </entry>
 </feed>
