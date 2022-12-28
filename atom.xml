@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2022-10-27T05:01:22+02:00</updated>
+<updated>2022-12-28T03:42:59+02:00</updated>
 <author>
 	<name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -164,5 +164,11 @@
 <link href="https://tokiesan.github.io/blogposts/toMyFriend.html"/>
 <updated>2022-10-27T05:01:22+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/toMyFriend.html</id>
+</entry>
+<entry>
+<title>Redpilled</title><summary>Well, not that much of a redpill but call it a teaser for 2022 wrapped?</summary>
+<link href="https://tokiesan.github.io/blogposts/RedPilled.html"/>
+<updated>2022-12-28T03:42:59+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/RedPilled.html</id>
 </entry>
 </feed>
