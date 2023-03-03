@@ -7,6 +7,9 @@ read -p "Summary: " summ
 # Get title from the first line of the file
 title=$(sed -n '1s/^#\s*//p' "${file_name}")
 
+# Old way, decided to use less stuff but left it here cuz why not
+#title=$(cat "${file_name}" | head -1 | cut -c 3-) 
+
 # Get the post header from the "head" file
 headerContent=$(cat blogposts/head)
 
@@ -15,9 +18,6 @@ postTitle=$(cat ${file_name} | grep --line-number \#\# | grep 2 | cut -c 6-)
 
 # Convert markdown content to HTML
 htmlContent=$(md2html "${file_name}")
-
-# Get the current date and time
-#title=$(cat "${file_name}" | head -1 | cut -c 3-)
 
 # Get the current date and time in the RFC 3339 format and regular format
 postDate=$(date +"%a, %d %b. %Y - %r")
