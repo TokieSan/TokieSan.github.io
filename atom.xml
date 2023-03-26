@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2023-03-01T00:04:41+02:00</updated>
+<updated>2023-03-26T22:52:59+02:00</updated>
 <author>
-	<name>Ahmed Gamal Eltokhy</name>
+<name>Ahmed Gamal Eltokhy</name>
 </author>
 <id>https://tokiesan.github.io</id>
 
@@ -182,5 +182,11 @@
 <link href="https://tokiesan.github.io/blogposts/broken_glasses.html"/>
 <updated>2023-03-01T00:04:41+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/broken_glasses.html</id>
+</entry>
+<entry>
+<title>Amal</title><summary>"This is heaven, and I will throw you out."</summary>
+<link href="https://tokiesan.github.io/blogposts/amal.html"/>
+<updated>2023-03-26T22:52:59+02:00</updated>
+<id>https://tokiesan.github.io/blogposts/amal.html</id>
 </entry>
 </feed>
