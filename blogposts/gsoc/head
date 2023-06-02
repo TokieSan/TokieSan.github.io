@@ -1,0 +1,11 @@
+    <link href="../../atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 style="text-align: center;margin:0.7em;"><a href="../index.html" style="text-decoration: none; color:#000000;"> Tokhy's </a> <span style="color:#db2e53">Blog</span> </h1>     
+
+    <div class="header">
+        
+    </div>
+
+    <div class="mainContainer" style="margin:1%;background-color:#e9e9e9;padding:4%;">

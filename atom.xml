@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2023-03-26T22:52:59+02:00</updated>
+<updated>2023-06-02T20:03:54+03:00</updated>
 <author>
 <name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -188,5 +188,17 @@
 <link href="https://tokiesan.github.io/blogposts/amal.html"/>
 <updated>2023-03-26T22:52:59+02:00</updated>
 <id>https://tokiesan.github.io/blogposts/amal.html</id>
+</entry>
+<entry>
+<title></title><summary>LibreOffice Google Summer of Code 23 Proposal</summary>
+<link href="https://tokiesan.github.io/blogposts/gsoc/libreoffice-prop.html"/>
+<updated>2023-06-02T20:02:39+03:00</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/libreoffice-prop.html</id>
+</entry>
+<entry>
+<title>Pilot: Joining LibreOffice in GSoC'23</title><summary>Joining LibreOffice in GSoC'23</summary>
+<link href="https://tokiesan.github.io/blogposts/gsoc/pilot.html"/>
+<updated>2023-06-02T20:03:54+03:00</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/pilot.html</id>
 </entry>
 </feed>
