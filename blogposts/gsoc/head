@@ -1,4 +1,4 @@
-    <link href="../../atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
+    <link href="../../atom-gsoc.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
