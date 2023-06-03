@@ -24,6 +24,7 @@ postDate=$(date +"%a, %d %b. %Y - %r")
 xmlDate=$(date --rfc-3339=seconds | sed 's/ /T/')
 
 remNums=$(cat atom.xml | wc -l)
+remNums2=$(cat atom-gsoc.xml | wc -l)
 
 # Write the HTML file
 {
@@ -65,20 +66,41 @@ echo "<entry>
 </feed>" >> atom.xml
 
 
+echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<feed xmlns=\"http://www.w3.org/2005/Atom\">
+<title>Tokhy's hub</title>
+<link href=\"https://tokiesan.github.io/atom.xml\" rel=\"self\"/>
+<updated>"${xmlDate}"</updated>
+<author>
+<name>Ahmed Gamal Eltokhy</name>
+</author>
+<id>https://tokiesan.github.io</id>
+""$(sed -n 10,$(echo ${remNums2}-1 | bc)p atom-gsoc.xml)" > atom-gsoc.xml
 
-# Add entry to blogposts/index.html
-#newElem="<tr>\n<td class=\"title\"><a href=\"${url_alias}.html\">${title}</a></td>\n<td><em>$(date +"%a, %d %b. %Y")</em></td>\n</tr>"
+echo "<entry>
+<title>"${title}"</title><summary>"${summ}"</summary>""
+<link href=\"https://tokiesan.github.io/blogposts/gsoc/${url_alias}.html\"/>
+<updated>"${xmlDate}"</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/${url_alias}.html</id>
+</entry>
+</feed>" >> atom-gsoc.xml
 
-#awk -v FOO1="${newElem}" '{
-    #sub(/<!---->/, "<!----> " FOO1);
-    #print;
-#}' blogposts/gsoc/index.html > temporary_output
-#cat temporary_output > blogposts/gsoc/index.html
-#rm -rf temporary_output 
+
+
+
+ #Add entry to blogposts/index.html
+newElem="<tr>\n<td class=\"title\"><a href=\"${url_alias}.html\">${title}</a></td>\n<td><em>$(date +"%a, %d %b. %Y")</em></td>\n</tr>"
+
+awk -v FOO1="${newElem}" '{
+    sub(/<!---->/, "<!----> " FOO1);
+    print;
+}' blogposts/gsoc/index.html > temporary_output
+cat temporary_output > blogposts/gsoc/index.html
+rm -rf temporary_output 
 
 mv ${file_name} junk/
 
 # Add new post to repo
-#git add "blogposts/gsoc/${url_alias}.html" "atom.xml" "blogposts/index.html"
-#git commit -m "Added ${title} post"
-#git push -u origin
+git add "blogposts/gsoc/${url_alias}.html" "atom.xml" "blogposts/index.html"
+git commit -m "Added ${title} post"
+git push -u origin
