@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSoC Week 1 Report: Remembering Digital Signatures</title>
+    <link href="../../atom-gsoc.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 style="text-align: center;margin:0.7em;"><a href="../index.html" style="text-decoration: none; color:#000000;"> Tokhy's </a> <span style="color:#db2e53">Blog</span> </h1>     
+
+    <div class="header">
+        
+    </div>
+
+    <div class="mainContainer" style="margin:1%;background-color:#e9e9e9;padding:4%;">
+</head>
+<body>
+<h1>GSoC Week 1 Report: Remembering Digital Signatures</h1>
+<p><strong>TL;DR</strong> <em>Started working on the option to remember digital signatures session-wise.</em></p>
+<p>First thing first, I needed to create an environment that simulates the possible issues we face.
+The first issue I am working on is that every saving need selection for the certificate anew.
+While this may be the needed, but most probably files are edited a lot and need to have the certificate remembered rather than having the hassle of rechoosing the certificate from a set that can be very large which is a confusing process.</p>
+<p>First things first, I needed to have a large number of certificates so the time taken to load them is noticeable so I can assure that whatever I finish work as expected (in this current case, adding the option to remember the chosen certificate).</p>
+<p>I created a small bash script that generates certificates:</p>
+<pre><code>#!/bin/bash
+
+mkdir -p certificates
+cd certificates
+
+for ((i=1; i&lt;=500; i++))
+do
+    gpg --batch --gen-key &lt;&lt;EOF
+        %no-protection
+        Key-Type: RSA
+        Key-Length: 2048
+        Subkey-Type: RSA
+        Subkey-Length: 2048
+        Name-Real: User $i
+        Name-Email: user$i@example.com
+        Expire-Date: 1y
+        %commit
+EOF
+
+    gpg --armor --export user$i@example.com &gt; user$i.asc
+
+    echo &quot;Generated certificate for User $i&quot;
+done
+
+</code></pre>
+<p>This way, every time the certificate choosing dialog is opened takes some noticeable time so I can easily observe the progress.</p>
+<p>Now, it is time to work on the option of remembering the chosen certificate for some file. I filed a bug on Bugzilla, <a href="https://bugs.documentfoundation.org/show_bug.cgi?id=155665">tdf#155665</a>, so everyone is allowed to get involved and track the progress.</p>
+<p>A bad path that I initially took was to try to &quot;hack&quot; into the current implementation of the functions that directly consider loading certificates and so on.
+While this may work in multiple cases, it did not work in this one and ended up with unfortunately wasting couple of hours.</p>
+<p>Then, I took the correct approach of examining in a DFS way the relevant parts (digitalsignaturesdialog.cxx, certificatechooser.cxx, etc.) so I can really understand all the details to avoid any mistakes, especially in such an important aspect that can lead to a wide margin of security issues.</p>
+<p>The pathway for signing a document was extremely complex it took me days to grasp it since it occurs on different levels and in a wide spectrum of ways, however, after understanding the workflow possible ways to have the option became there and made more since. This was when I started working on this <a href="https://gerrit.libreoffice.org/c/core/+/152687">WIP patch</a> to have the option in the way you can see below.</p>
+<p><img src="https://i.imgur.com/mqA2hLW.png" alt="remember digital signature option"></p>
+<p>What is to happen when having this option activated is to have a function that re-executes signing process after each save using the remembered certificates during signing. This main execution of the function is in <em>core/stx2/source/doc/objserv.cxx</em> where it handles the remembering of signatures' information and execute resigning after each save. The linking with the GUI option (which was created in digital signatures dialog) is currently still unfinished, but it will be done either by changing XStorage implementation or by modifying the signatures manager. Wait for an update on that next week!</p>
+<p>Overall, even though the main workflow of the patch is complete, it is still not finished as some modifications will have to be made in order to correctly link the resigning function to the saving request. Next steps to be done is finishing the links between GUI and the resigning function and then working on caching the certificates and signatures if initially loaded per session.</p>
+<p>This was a summary of what was done until now and what is going to be done in the next week. In the end, I would love to thank Thorsten Behrens, Heiko Tietze, and Hossein Nourikhah for their help and guidance throughout the process.</p>
+<br/><em style='color: #333333;'>Posted at Sat, 10 Jun. 2023 - 07:44:36 PM</em><br/><br/>
+</body>
+</html>
+
+        <div class="butt">
+            <a href="../../philosophy.html">philosophies</a>
+            <a href="index.html">blog</a>
+            <a href="../../favs/index.html">favs</a>
+            <!--- <a href="../track.html">track</a>
+            <a href="../wishlist.html">wishlist</a
+--->
+            <a href="../../atom.xml">RSS</a>
+            <a href="../../atom-gsoc.xml">GSoC RSS</a>
+            <br/><br/>       
+            <a href="../../contact.html" style="color:#24d1ac">wanna <span style="text-decoration: line-through;">date</span> contact me?</a>
+        </div>
+    </div>
+    <div class="header">
+
+    </div>
+</body>
+</html>
+

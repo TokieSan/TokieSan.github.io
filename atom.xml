@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2023-06-02T20:03:54+03:00</updated>
+<updated>2023-06-10T19:44:36+03:00</updated>
 <author>
 <name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -200,5 +200,11 @@
 <link href="https://tokiesan.github.io/blogposts/gsoc/pilot.html"/>
 <updated>2023-06-02T20:03:54+03:00</updated>
 <id>https://tokiesan.github.io/blogposts/gsoc/pilot.html</id>
+</entry>
+<entry>
+<title>GSoC Week 1 Report: Remembering Digital Signatures</title><summary>In the first week of GSoC, the focus was on implementing an option to remember digital signatures session-wise in LibreOffice. The initial setup involved creating a testing environment with numerous certificates, filing a bug on Bugzilla, and exploring the relevant codebase. The main workflow of the patch is now complete, with the next steps being to link the resigning function to the saving request and cache certificates and signatures per session.</summary>
+<link href="https://tokiesan.github.io/blogposts/gsoc/week_1_report.html"/>
+<updated>2023-06-10T19:44:36+03:00</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/week_1_report.html</id>
 </entry>
 </feed>
