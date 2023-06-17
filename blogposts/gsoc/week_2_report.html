@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 2 Report</title>
+    <link href="../../atom-gsoc.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 style="text-align: center;margin:0.7em;"><a href="../index.html" style="text-decoration: none; color:#000000;"> Tokhy's </a> <span style="color:#db2e53">Blog</span> </h1>     
+
+    <div class="header">
+        
+    </div>
+
+    <div class="mainContainer" style="margin:1%;background-color:#e9e9e9;padding:4%;">
+</head>
+<body>
+<h1>Week 2 Report</h1>
+<p><strong>TL;DR</strong> <em>Finished working on remembering digital signatures features, started working on caching certificates session-wise.</em></p>
+<p>This week, I finished the patch adding a new option to fix the issue discussed in the last week of how digital signatures needed to be created anew every save. The patch can be seen <a href="https://gerrit.libreoffice.org/c/core/+/152687">here</a>. Now remember how sometimes you have to sign documents repeatedly, and it becomes a hassle? Well, not anymore!</p>
+<p>In the patch, after signing your document with digital signatures dialog it pops up a dialog box that allows users to remember the signature they've used. Now, whenever you save a document, it will automatically resign with the remembered signature if the option is turned on. No more manual signing every time you save!</p>
+<p>To make this happen, I implemented a new function called ResignDocument in objserv.cxx. This function takes care of resigning the document after every save if the remember signature option is enabled. I also created a new dialog box to check whether the signature needs to be remembered or not. I have also made some changes in objsh.hxx and guisaveas.cxx to handle the remember signature option properly. These changes ensure that the signature is remembered and applied correctly during the saving process. You can see the patch for more information.</p>
+<p>After finishing that, I've been working on implementing a caching mechanism for loading certificates. The goal is to improve performance by avoiding redundant certificate loading operations which after testing with various number of certificates, from 30 to 1000, it took around 800ms to 3900ms to load them every time, which makes the UI feels a lot unresponsive. The patch is currently work in progress, you can see it <a href="https://gerrit.libreoffice.org/c/core/+/153113">here</a>. Here's a summary of what I've done:</p>
+<p>Added a new method, setMemoizedCertificates, to the DigitalSignatures class in the sfx2 module. This method takes a reference to a vector of XXMLSecurityContext objects and caches them for later use.
+Modified the SfxMedium class in the sfx2 module to include a member variable, xMemoizedSecContexts, which stores the memoized security contexts.
+Updated the SignDocumentContentUsingCertificate method in the SfxMedium class to check if the memoized security contexts are empty before using them. If empty, it retrieves them from the DigitalSignatures object and stores them in xMemoizedSecContexts.
+Added the setMemoizedCertificates and getMemoizedSecContexts methods to the DocumentDigitalSignatures class in the xmlsecurity module. These methods allow setting and retrieving the memoized security contexts.
+Modified the CertificateChooser class in the xmlsecurity module to use the memoized security contexts when initializing the certificate selection dialog.
+By implementing this caching mechanism, we can avoid redundant loading of certificates, which will lead to improved performance when signing or encrypting documents. I'll continue working on this caching mechanism in the coming week, accompanied by going for the next steps of the project.</p>
+<p>Feel free to email me with your questions or concerns. See you next week ;) !</p>
+<br/><em style='color: #333333;'>Posted at Sat, 17 Jun. 2023 - 09:18:46 PM</em><br/><br/>
+</body>
+</html>
+
+        <div class="butt">
+            <a href="../../philosophy.html">philosophies</a>
+            <a href="index.html">blog</a>
+            <a href="../../favs/index.html">favs</a>
+            <!--- <a href="../track.html">track</a>
+            <a href="../wishlist.html">wishlist</a
+--->
+            <a href="../../atom.xml">RSS</a>
+            <a href="../../atom-gsoc.xml">GSoC RSS</a>
+            <br/><br/>       
+            <a href="../../contact.html" style="color:#24d1ac">wanna <span style="text-decoration: line-through;">date</span> contact me?</a>
+        </div>
+    </div>
+    <div class="header">
+
+    </div>
+</body>
+</html>
+
