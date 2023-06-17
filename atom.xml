@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2023-06-10T19:44:36+03:00</updated>
+<updated>2023-06-17T21:18:46+03:00</updated>
 <author>
 <name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -206,5 +206,11 @@
 <link href="https://tokiesan.github.io/blogposts/gsoc/week_1_report.html"/>
 <updated>2023-06-10T19:44:36+03:00</updated>
 <id>https://tokiesan.github.io/blogposts/gsoc/week_1_report.html</id>
+</entry>
+<entry>
+<title>Week 2 Report</title><summary>**Week 2 Report - Summary** Implemented the ability to remember digital signatures, eliminating the need for manual signing on each save. Also working on a caching mechanism to improve certificate loading performance. More details [here](https://gerrit.libreoffice.org/c/core/+/152687) and [here](https://gerrit.libreoffice.org/c/core/+/153113). Stay tuned for further updates on this ongoing work.</summary>
+<link href="https://tokiesan.github.io/blogposts/gsoc/week_2_report.html"/>
+<updated>2023-06-17T21:18:46+03:00</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/week_2_report.html</id>
 </entry>
 </feed>
