@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
-<link href="https://tokiesan.github.io/atom.xml" rel="self"/>
+<link href="https://tokiesan.github.io/atom-gsoc.xml" rel="self"/>
 <updated>2023-06-17T21:18:46+03:00</updated>
 <author>
 <name>Ahmed Gamal Eltokhy</name>
 </author>
-<id>https://tokiesan.github.io</id>
+<id>https://tokiesan.github.io/blogposts/gsoc/</id>
 
 <entry>
 <title>GSoC'23 LibreOffice Proposal</title><summary>LibreOffice Google Summer of Code 23 Proposal</summary>
