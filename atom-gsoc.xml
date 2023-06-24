@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
-<link href="https://tokiesan.github.io/atom-gsoc.xml" rel="self"/>
-<updated>2023-06-17T21:18:46+03:00</updated>
+<link href="https://tokiesan.github.io/atom.xml" rel="self"/>
+<updated>2023-06-24T10:28:32+03:00</updated>
 <author>
 <name>Ahmed Gamal Eltokhy</name>
 </author>
-<id>https://tokiesan.github.io/blogposts/gsoc/</id>
+<id>https://tokiesan.github.io</id>
 
 <entry>
 <title>GSoC'23 LibreOffice Proposal</title><summary>LibreOffice Google Summer of Code 23 Proposal</summary>
@@ -31,5 +31,11 @@
 <link href="https://tokiesan.github.io/blogposts/gsoc/week_2_report.html"/>
 <updated>2023-06-17T21:18:46+03:00</updated>
 <id>https://tokiesan.github.io/blogposts/gsoc/week_2_report.html</id>
+</entry>
+<entry>
+<title>Week 3 Report: More Certificate Manager Improvements</title><summary>In the Week 3 report of my GSoC'23 journey at LibreOffice, I made significant improvements to the certificate manager integration and caching. I successfully implemented a patch to hide the certificate manager button when not available, laying the groundwork for future enhancements. Additionally, I worked on certificate caching to optimize access and reduce loading delays. The certificates view was revamped with a user-friendly tree view, simplifying navigation and management. Challenges ahead include further customization of certificate managers, improving the UI for viewing certificates, and completing the certificate caching feature.</summary>
+<link href="https://tokiesan.github.io/blogposts/gsoc/week_3_report.html"/>
+<updated>2023-06-24T10:28:32+03:00</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/week_3_report.html</id>
 </entry>
 </feed>
