@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 4 Report: Custom Window Manager and Certificate UI Enhancements</title>
+<title>Week 4 Report: Custom Certificate Manager and Certificate UI Enhancements</title>
     <link href="../../atom-gsoc.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -17,10 +17,10 @@
     <div class="mainContainer" style="margin:1%;background-color:#e9e9e9;padding:4%;">
 </head>
 <body>
-<h1>Week 4 Report: Custom Window Manager and Certificate UI Enhancements</h1>
+<h1>Week 4 Report: Custom Certificate Manager and Certificate UI Enhancements</h1>
 <p>Hello once again, dear FOSS enthusiasts! Time flies when you're immersed in the enthralling world of GSoC'23 at LibreOffice. This week, we dive into the our quest for certificate UI improvements. It was a busy week outside GSoC since it was Eid al-Adha, one of the largest main holidays celebrated in Islam, Eid Mubarak for all of my fellow Muslims :).  Let's take a look at the challenges and triumphs of this action-packed week.</p>
 <p><strong>TL;DR:</strong> Nearing completion of custom certificate manager integration and making progress on certificate UI improvements to enhance user experience.</p>
-<h2>Custom Window Manager Integration</h2>
+<h2>Custom Certificate Manager Integration</h2>
 <p>One of the main goals this week was to provide the option of choosing a custom certificate manager for LibreOffice. I've managed to create an initial patch that, pending some adjustments, is nearly ready for integration and is pending review. You can find the patch <a href="https://gerrit.libreoffice.org/c/core/+/153798">here</a>.</p>
 <p>To accomplish this, I introduced a new configuration option in <em>tools&gt;security</em>. This option allows users to specify the desired certificate manager by entering its executable path. In addition, I made the necessary changes in the underlying code to ensure LibreOffice uses the selected certificate manager when launched with adding the parameter to <em>officecfg/registry</em>.</p>
 <h2>Certificate UI Improvements</h2>

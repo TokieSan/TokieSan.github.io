@@ -39,7 +39,7 @@
 <id>https://tokiesan.github.io/blogposts/gsoc/week_3_report.html</id>
 </entry>
 <entry>
-<title>Week 4 Report: Custom Window Manager and Certificate UI Enhancements</title><summary>This week in GSoC'23 at LibreOffice, progress was made on custom certificate manager integration and certificate UI improvements. The custom certificate manager option is nearing completion, pending review, while work continues on transforming the certificate display with a tree view for easier navigation. Upcoming tasks include finalizing these features and continue working on UI improvements.</summary>
+<title>Week 4 Report: Custom Certificate Manager and Certificate UI Enhancements</title><summary>This week in GSoC'23 at LibreOffice, progress was made on custom certificate manager integration and certificate UI improvements. The custom certificate manager option is nearing completion, pending review, while work continues on transforming the certificate display with a tree view for easier navigation. Upcoming tasks include finalizing these features and continue working on UI improvements.</summary>
 <link href="https://tokiesan.github.io/blogposts/gsoc/week_4_report.html"/>
 <updated>2023-07-03T12:07:28+03:00</updated>
 <id>https://tokiesan.github.io/blogposts/gsoc/week_4_report.html</id>
