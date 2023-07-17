@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom-gsoc.xml" rel="self"/>
-<updated>2023-07-03T12:07:28+03:00</updated>
+<updated>2023-07-17T12:25:47+03:00</updated>
 <author>
 <name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -43,5 +43,11 @@
 <link href="https://tokiesan.github.io/blogposts/gsoc/week_4_report.html"/>
 <updated>2023-07-03T12:07:28+03:00</updated>
 <id>https://tokiesan.github.io/blogposts/gsoc/week_4_report.html</id>
+</entry>
+<entry>
+<title>Week 5 & 6 Report</title><summary>During Weeks 5 and 6 of GSoC at LibreOffice, I completed two patches: one for customized certificate managers, resolving related bugzilla issues, and another for improving the certificate chooser dialog. I also started working on search and filter functionalities for the dialog. Progress is being made to enhance the user experience and flexibility of certificate management in LibreOffice.</summary>
+<link href="https://tokiesan.github.io/blogposts/gsoc/week_5_6_report.html"/>
+<updated>2023-07-17T12:25:47+03:00</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/week_5_6_report.html</id>
 </entry>
 </feed>
