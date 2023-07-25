@@ -101,6 +101,6 @@ rm -rf temporary_output
 mv ${file_name} junk/
 
 # Add new post to repo
-git add "blogposts/gsoc/${url_alias}.html" "atom-gsoc.xml" "blogposts/gsoc/index.html"
+git add "blogposts/gsoc/${url_alias}.html" "atom-gsoc.xml" "blogposts/gsoc/index.html" "atom.xml"
 git commit -m "Added ${title} post"
 git push -u origin
