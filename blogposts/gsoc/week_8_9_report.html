@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 8 9 Report</title>
+    <link href="../../atom-gsoc.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 style="text-align: center;margin:0.7em;"><a href="../index.html" style="text-decoration: none; color:#000000;"> Tokhy's </a> <span style="color:#db2e53">Blog</span> </h1>     
+
+    <div class="header">
+        
+    </div>
+
+    <div class="mainContainer" style="margin:1%;background-color:#e9e9e9;padding:4%;">
+</head>
+<body>
+<h1>Week 8 9 Report</h1>
+<p>Hello everyone, one more update as we approach the final weeks of the project.</p>
+<p>TL;DR: Finished certificates caching, revisited proposal</p>
+<h2>Fixing Certificates Caching</h2>
+<p>I have finally figured out how to finalize the caching of certificates without needing to do a lot of code changes. You can see one failed attempt <a href="https://gerrit.libreoffice.org/c/core/+/153301">here</a> where I did around 350 changes across 20 files to still not crack the issue.
+However, this marked my first actual usage of those design patterns I have learned once a few months ago and never used them in a project.
+I have successfully implemented caching with a simple way smaller change <a href="https://gerrit.libreoffice.org/c/core/+/155373">here</a> with a singleton (I know it is like the last resort, but it was suitable for this exact situation).
+Even though no issues have been faced during testing now, I will be submitting a patch with some changes to assure thread-safety for that singleton.</p>
+<h1>Progress</h1>
+<p>Now, let's revisit our initial goals for the project:</p>
+<ul>
+<li>[x] Develop a mechanism to remember selected recipients for future saves</li>
+<li>[x] Improve the recipient selection UI to make it more intuitive and user-friendly (*)</li>
+<li>[x] Allow intelligently searching for keys in large keyrings</li>
+<li>[x] Improve UI latency for navigating large keyrings</li>
+<li>[x] Implement a filtering feature to narrow down search results</li>
+<li>[ ] Add asynchronous querying for improved performance (**)</li>
+</ul>
+<p><em>(*) Pending Improvements for the TreeView which was picked up throughout the process</em></p>
+<p><em>(**) Caching was decided to be an enough-solution to avoid the hurdle of always running a feature that is used by a small portion of users</em></p>
+<p>We can see that most of the initial goals have been successfully achieved pending some tiny parts. Next weeks we will just chill and revisit all parts for documentation/ improvements. Also, since multiple bugs are there on bugzilla related to certificate management, I will be working on them in the upcoming weeks and even after GSoC I will try to keep up with any bugs related to this area since I have dived well enough into it.</p>
+<h2>A Special Acknowledgment</h2>
+<p>Before concluding, I would like to express my sincere gratitude to Thorsten Behrens, Heiko Tietze, and Hossein Nourikhah. Their guidance and enthusiasm have propelled my progress. LibreOffice thrives on collaboration and camaraderie, and I am grateful to be part of such an amazing community.</p>
+<p>That's it, see you in the upcoming weeks! Feel free to email me with any questions, concerns, or even chatting! &lt;3</p>
+<br/><em style='color: #333333;'>Posted at Tue, 08 Aug. 2023 - 08:03:46 PM</em><br/><br/>
+</body>
+</html>
+
+        <div class="butt">
+            <a href="../../philosophy.html">philosophies</a>
+            <a href="index.html">blog</a>
+            <a href="../../favs/index.html">favs</a>
+            <!--- <a href="../track.html">track</a>
+            <a href="../wishlist.html">wishlist</a
+--->
+            <a href="../../atom.xml">RSS</a>
+            <a href="../../atom-gsoc.xml">GSoC RSS</a>
+            <br/><br/>       
+            <a href="../../contact.html" style="color:#24d1ac">wanna <span style="text-decoration: line-through;">date</span> contact me?</a>
+        </div>
+    </div>
+    <div class="header">
+
+    </div>
+</body>
+</html>
+
