@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom-gsoc.xml" rel="self"/>
-<updated>2023-08-08T20:03:46+03:00</updated>
+<updated>2023-08-19T19:18:48+03:00</updated>
 <author>
 <name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -61,5 +61,11 @@
 <link href="https://tokiesan.github.io/blogposts/gsoc/week_8_9_report.html"/>
 <updated>2023-08-08T20:03:46+03:00</updated>
 <id>https://tokiesan.github.io/blogposts/gsoc/week_8_9_report.html</id>
+</entry>
+<entry>
+<title>Week 10 11 Report</title><summary>I'm providing an update after 10 weeks working on LibreOffice. I have successfully completed all the requirements I originally proposed related to improving the user interface for digital certificates and signatures. This includes developing a mechanism to remember selected recipients, improving the recipient selection UI, enabling intelligent searching of large keyrings, improving UI latency, and adding filtering for search results. I'm very pleased with the progress made so far. Going forward, I plan to focus on enhancing the documentation for the xmlsecurity module and addressing any bugs related to digital signatures. I'm very grateful to several LibreOffice developers, including Thorsten Behrens, Heiko Tietze, and Hossein Nourikhah, who provided excellent guidance during this project. While I'm sad this journey is nearly over, I achieved my goals and learned a lot along the way. I look forward to continuing to contribute to LibreOffice in the future.</summary>
+<link href="https://tokiesan.github.io/blogposts/gsoc/week_10_11_report.html"/>
+<updated>2023-08-19T19:18:48+03:00</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/week_10_11_report.html</id>
 </entry>
 </feed>
