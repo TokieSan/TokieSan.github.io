@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Tokhy's hub</title>
 <link href="https://tokiesan.github.io/atom.xml" rel="self"/>
-<updated>2023-08-19T19:18:48+03:00</updated>
+<updated>2023-08-25T15:25:48+03:00</updated>
 <author>
 <name>Ahmed Gamal Eltokhy</name>
 </author>
@@ -242,5 +242,11 @@
 <link href="https://tokiesan.github.io/blogposts/gsoc/week_10_11_report.html"/>
 <updated>2023-08-19T19:18:48+03:00</updated>
 <id>https://tokiesan.github.io/blogposts/gsoc/week_10_11_report.html</id>
+</entry>
+<entry>
+<title>Final Report</title><summary>The past four months working on LibreOffice for Google Summer of Code 2023 have been an amazing learning experience. With the help of mentors Thorsten, Heiko, and Hossein, I implemented features to improve the user experience around digital signing and encryption like remembering recipients, better recipient selection UI, fast searching/filtering of keys, and documentation. My 12 patches were merged and it was incredible contributing to open source with the friendly LibreOffice community. I look forward to more FOSS contributions in the future!</summary>
+<link href="https://tokiesan.github.io/blogposts/gsoc/final_report.html"/>
+<updated>2023-08-25T15:25:48+03:00</updated>
+<id>https://tokiesan.github.io/blogposts/gsoc/final_report.html</id>
 </entry>
 </feed>
